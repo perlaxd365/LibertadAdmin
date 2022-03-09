@@ -203,6 +203,44 @@ if ($_SESSION["tipo_usuario_corsch"] != "Administrador") {
                                         </ul>
                                     </li>
                                 </ul>
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="pcoded-hasmenu <?php if ($pagina[0] == "configWeb") {
+                                                                    echo 'active';
+                                                                } ?>">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="ti-lock"></i><b>BC</b></span>
+                                            <span class="pcoded-mtext">Mantenimiento</span>
+                                            <span class="pcoded-mcaret"></span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+
+                                            <?php
+
+
+                                            if ($_SESSION["tipo_usuario_corsch"] == "Administrador") {
+
+
+                                            ?>
+                                                <li class=" ">
+                                                    <a href="<?php echo SERVERURL ?>configWeb/" class="waves-effect waves-dark">
+                                                        <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                        <span class="pcoded-mtext">Configuracion Web</span>
+                                                        <span class="pcoded-mcaret"></span>
+                                                    </a>
+                                                </li>
+                                                <li class=" ">
+                                                    <a href="<?php echo SERVERURL ?>importarProducto/" class="waves-effect waves-dark">
+                                                        <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                        <span class="pcoded-mtext">Importar Productos</span>
+                                                        <span class="pcoded-mcaret"></span>
+                                                    </a>
+                                                </li>
+
+                                            <?php }  ?>
+
+                                        </ul>
+                                    </li>
+                                </ul>
                             <?php
 
                             } else {

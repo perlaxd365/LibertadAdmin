@@ -102,17 +102,19 @@
                         <div class="auth-box card">
                             <div class="card-block">
                                 <div class="row m-b-20">
+                                    <img src="<?php echo SERVERURL;?>vistas/images/gallo.png" class="rounded mx-auto d-block" alt="...">
+                                    
                                     <div class="col-md-12">
                                         <h3 class="text-center">Iniciar Sesión</h3>
                                     </div>
                                 </div>
                                 <div class="form-group form-primary">
-                                    <input type="text" name="email" class="form-control">
+                                    <input autocomplete="off" type="text" name="email" class="form-control">
                                     <span class="form-bar"></span>
-                                    <label class="float-label">Ingresa tu usuario</label>
+                                    <label  class="float-label">Ingresa tu usuario</label>
                                 </div>
                                 <div class="form-group form-primary">
-                                    <input type="password" name="password" class="form-control">
+                                    <input autocomplete="off" type="password" name="password" class="form-control">
                                     <span class="form-bar"></span>
                                     <label class="float-label">ingresa tu contraseña</label>
                                 </div>

@@ -1,7 +1,7 @@
 <?php 
 	class vistasModelo{
 		protected function obtener_vistas_modelo($vistas){
-			$listaBlanca=["home","cpe","user","consultaCpe","userUP","EliminarComp","perfil","auditoria","consultaComprobante"];
+			$listaBlanca=["home","cpe","user","consultaCpe","userUP","EliminarComp","perfil","auditoria","consultaComprobante","configWeb","importarProducto"];
 			if(in_array($vistas, $listaBlanca)){
 				if(is_file("./vistas/contenido/".$vistas."-view.php")){
 					$contenido="./vistas/contenido/".$vistas."-view.php";

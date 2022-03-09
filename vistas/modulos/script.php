@@ -22,4 +22,5 @@
     <script src="<?php echo SERVERURL;?>vistas/js/funcioncarlos.js"></script>
     <script src="<?php echo SERVERURL;?>vistas/js/datosModal.js"></script>
     <script src="<?php echo SERVERURL;?>vistas/js/moduloCpe.js"></script>
+    <script src="<?php echo SERVERURL;?>vistas/js/moduloProducto.js"></script>
   
