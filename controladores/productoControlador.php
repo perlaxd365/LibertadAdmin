@@ -83,45 +83,59 @@ class productoControlador extends productoModelo
     public function agregar_imagenes_producto_controlador()
     {
 
-        if (isset($_FILES["imagenesProducto"])) {
-            $contador = 0;
+        if (isset($_FILES["imagenesProducto"]) && $_FILES["imagenesProducto"]["size"][0]>0) {
 
-            foreach ($_FILES["imagenesProducto"]["tmp_name"] as $key => $tmp_name) {
-                $contador++;
 
-                if ($_FILES["imagenesProducto"]["name"][$key]) {
+            if ($_FILES["imagenesProducto"]["size"][0] >  1000*1000) {
+                $alerta = [
+                    "Alerta" => "simple",
+                    "Titulo" => "(Límite 1MB)",
+                    "Texto" => "El tamaño de la imagen supera el límite establecido ",
+                    "Tipo" => "error"
+                ];
+            } else {
 
-                    //NOMBRE DE ARCHIVO
-                    $filename = $_FILES["imagenesProducto"]["name"][$key];
-                    //NOMBRE TEMPORAL DE ARCHIVO
-                    $temporal = $_FILES["imagenesProducto"]["tmp_name"][$key];
 
-                    $directorio = "../../libertad/resources/images/general";
 
-                    if (file_exists($directorio)) {
-                        mkdir($directorio, 0777, true);
-                    } else {
-                        mkdir($directorio, 0700, true);
+                $contador = 0;
+
+                foreach ($_FILES["imagenesProducto"]["tmp_name"] as $key => $tmp_name) {
+                    $contador++;
+
+                    if ($_FILES["imagenesProducto"]["name"][$key]) {
+
+                        //NOMBRE DE ARCHIVO
+                        $filename = $_FILES["imagenesProducto"]["name"][$key];
+                        //NOMBRE TEMPORAL DE ARCHIVO
+                        $temporal = $_FILES["imagenesProducto"]["tmp_name"][$key];
+
+                        $directorio = "../../libertad/resources/images/general";
+
+                        if (file_exists($directorio)) {
+                            mkdir($directorio, 0777, true);
+                        } else {
+                            mkdir($directorio, 0700, true);
+                        }
+
+                        $dir = opendir($directorio);
+                        $ruta = $directorio . '/' . $filename;
+                        if (move_uploaded_file($temporal, $ruta)) {
+                            $alerta = [
+                                "Alerta" => "recargar",
+                                "Titulo" => "Completado",
+                                "Texto" => "Se guardaron correctamente los archivos",
+                                "Tipo" => "success"
+                            ];
+                        } else {
+                            $alerta = [
+                                "Alerta" => "simple",
+                                "Titulo" => "Algo salió mal",
+                                "Texto" => "No se pudo agregar pago. ¡Ups! 2",
+                                "Tipo" => "error"
+                            ];
+                        }
+                        closedir($dir);
                     }
-
-                    $dir = opendir($directorio);
-                    $ruta = $directorio . '/' . $filename;
-                    if (move_uploaded_file($temporal, $ruta)) {
-                        $alerta = [
-                            "Alerta" => "recargar",
-                            "Titulo" => "Completado",
-                            "Texto" => "Se guardaron correctamente los archivos",
-                            "Tipo" => "success"
-                        ];
-                    } else {
-                        $alerta = [
-                            "Alerta" => "simple",
-                            "Titulo" => "Algo salió mal",
-                            "Texto" => "No se pudo agregar pago. ¡Ups! 2",
-                            "Tipo" => "error"
-                        ];
-                    }
-                    closedir($dir);
                 }
             }
         } else {

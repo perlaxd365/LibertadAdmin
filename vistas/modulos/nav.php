@@ -235,6 +235,13 @@ if ($_SESSION["tipo_usuario_corsch"] != "Administrador") {
                                                         <span class="pcoded-mcaret"></span>
                                                     </a>
                                                 </li>
+                                                <li class=" ">
+                                                    <a href="<?php echo SERVERURL ?>banner/" class="waves-effect waves-dark">
+                                                        <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                        <span class="pcoded-mtext">Banner</span>
+                                                        <span class="pcoded-mcaret"></span>
+                                                    </a>
+                                                </li>
 
                                             <?php }  ?>
 

@@ -1,3 +1,4 @@
+
 <div class="pcoded-content">
     <!-- Page-header start -->
     <div class="page-header">
@@ -41,6 +42,9 @@
                                     <button type="submit" class="btn btn-primary">Cargar</button>
                                 </form>
 
+                                <div id="loading" style="display: none;">
+                                    <img width="80" class="rounded mx-auto d-block" height="50" src="<?php echo SERVERURL ?>vistas/images/cargando.gif" alt="">
+                                </div>
 
                                 <div class="RespuestaAjax" id="RespuestaAjax">
                                 </div>
@@ -57,15 +61,18 @@
                         <div class="card-body">
                             <div class="card-block">
 
-                                <h6>Cargar imagenes de productos | <span class="badge badge-secondary">Formato: PNG</span></h6>
+                                <h6>Cargar imagenes de productos | <span class="badge badge-secondary">Formato: PNG ó JPG | Limite subida 1MB | Dimensiones 800 x 400</span></h6>
                                 <form action="<?php echo SERVERURL; ?>ajax/productoAjax.php"  method="POST" data-form="save" class="FormularioAjax" autocomplete="off" enctype="multipart/form-data">
 
                                     <div class="form-group"> 
-                                        <input multiple="" name="imagenesProducto[]" id="imagenesProducto[]" accept="image/png"  type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        <input multiple="" name="imagenesProducto[]" id="imagenesProducto[]" accept="image/*"  type="file" class="form-control-file" id="exampleFormControlFile1">
                                     </div>
                                       <button type="submit" class="btn btn-primary">Cargar</button>
                                 </form>
 
+                                <div id="loading" style="display: none;">
+                                    <img width="80" class="rounded mx-auto d-block" height="50" src="<?php echo SERVERURL ?>vistas/images/cargando.gif" alt="">
+                                </div>
 
                                 <div class="RespuestaAjax" id="RespuestaAjax">
                                 </div>
