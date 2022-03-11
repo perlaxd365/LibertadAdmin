@@ -52,7 +52,6 @@
                                         <label for="exampleInputPassword1">Dirección URL</label>
                                         <input type="text" name="url" class="form-control" id="exampleInputEmail1" placeholder="Ingresar Dirección URL del botón">
                                     </div>
-                                </form>
                                 <br>
 
 

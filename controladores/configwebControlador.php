@@ -19,6 +19,10 @@ class configwebControlador extends configwebModelo
         $insta = $_POST['url-insta-up'];
         $twi = $_POST['url-tw-up'];
         $in = $_POST['url-in-up'];
+        $direccion_eti = $_POST['direccion_eti'];
+        $ciudad_eti = $_POST['ciudad_eti'];
+        $distrito_eti = $_POST['distrito_eti'];
+        $pais_eti = $_POST['pais_eti'];
         
         $dataConfigWeb = [
             "id_etiqueta" => $id_etiqueta,
@@ -28,7 +32,11 @@ class configwebControlador extends configwebModelo
             "face" => $face,
             "insta" => $insta,
             "twi" => $twi,
-            "in" => $in
+            "in" => $in,
+            "direccion_eti" => $direccion_eti,
+            "ciudad_eti" => $ciudad_eti,
+            "distrito_eti" => $distrito_eti,
+            "pais_eti" => $pais_eti
         ];
 
         $upConfig = configwebModelo::up_config_modelo($dataConfigWeb);

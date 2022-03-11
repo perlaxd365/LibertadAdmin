@@ -43,22 +43,13 @@
 
                             <div class="card" style="width: auto">
                                 <div class="card-body">
-                                    <h5 class="card-title">Actualizar Configuración</h5>
+                                    
                                     <form action="<?php echo SERVERURL; ?>ajax/configwebAjax.php" method="POST" data-form="update" class="FormularioAjax" autocomplete="off" enctype="multipart/form-data">
-                                        <div class="row">
+                                    
+                                    <h5 class="card-title">Configuración de etiquetas</h5>    
+                                    <div class="row">
                                             <input type="hidden" value="<?php echo $campos['id_etiqueta']?>" name="id_etiqueta">
-                                            <div class="col-md-6">
-                                                <label for="exampleInputEmail1">Correo</label>
-                                                <input value="<?php echo $campos['correo_eti'] ?>"  name="correo-up" placeholder="Ingresar correo" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="exampleInputEmail1">Teléfono</label>
-                                                <input value="<?php echo $campos['telefono_eti'] ?>"  name="telefono-up" placeholder="Ingresar teléfono" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="exampleInputEmail1">Texto pié de Página</label>
-                                                <input value="<?php echo $campos['copy_eti'] ?>"  name="copy-up" placeholder="Ingresar texto pié de página" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
-                                            </div>
+                                            
                                             <div class="col-md-6">
                                                 <label for="exampleInputEmail1">URL Facebook</label>
                                                 <input value="<?php echo $campos['url_fb_eti'] ?>"  name="url-fb-up" placeholder="Ingresar dirección de Facebook" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -76,7 +67,46 @@
                                                 <input value="<?php echo $campos['url_in_eti'] ?>"  name="url-in-up" placeholder="Ingresar dirección de LinkedIn" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                             </div>
 
+                                    </div>
+                                    <br>
+                                            <h5 class="card-title">Configuración de empresa</h5>    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                                <label for="exampleInputEmail1">Correo</label>
+                                                <input value="<?php echo $campos['correo_eti'] ?>"  name="correo-up" placeholder="Ingresar correo" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="exampleInputEmail1">Teléfono</label>
+                                                <input value="<?php echo $campos['telefono_eti'] ?>"  name="telefono-up" placeholder="Ingresar teléfono" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="exampleInputEmail1">Direccion de Local</label>
+                                                <input value="<?php echo $campos['direccion_eti'] ?>"  name="direccion_eti" placeholder="Ingresar dirección de empresa" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="exampleInputEmail1">Ciudad</label>
+                                                <input value="<?php echo $campos['ciudad_eti'] ?>"  name="ciudad_eti" placeholder="Ingresar Ciudad" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="exampleInputEmail1">Distrito</label>
+                                                <input value="<?php echo $campos['distrito_eti'] ?>"  name="distrito_eti" placeholder="Ingresar Distrito" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="exampleInputEmail1">País</label>
+                                                <input value="<?php echo $campos['pais_eti'] ?>"  name="pais_eti" placeholder="Ingresar Pais" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            </div>
+
                                         </div>
+                                        <br>
+                                    <h5 class="card-title">Configuración de texto</h5>    
+                                    <div class="row">
+                                            <input type="hidden" value="<?php echo $campos['id_etiqueta']?>" name="id_etiqueta">
+                                            
+                                            <div class="col-md-6">
+                                                <label for="exampleInputEmail1">Texto pié de Página</label>
+                                                <input value="<?php echo $campos['copy_eti'] ?>"  name="copy-up" placeholder="Ingresar texto pié de página" type="text"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                            </div>
+                                    </div>
                                         <br>
                                         <?php
 

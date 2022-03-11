@@ -7,7 +7,7 @@
 	class configwebModelo extends mainModel{
         
         protected function up_config_modelo($datos){
-			$sql=mainModel::conectar()->prepare("CALL SP_UP_CONFIGWEB('".$datos['correo']."','".$datos['copy']."','".$datos['telefono']."','".$datos['face']."','".$datos['insta']."','".$datos['twi']."','".$datos['in']."','".$datos['id_etiqueta']."')");
+			$sql=mainModel::conectar()->prepare("CALL SP_UP_CONFIGWEB('".$datos['correo']."','".$datos['copy']."','".$datos['telefono']."','".$datos['face']."','".$datos['insta']."','".$datos['twi']."','".$datos['in']."','".$datos['id_etiqueta']."','".$datos['direccion_eti']."','".$datos['ciudad_eti']."','".$datos['distrito_eti']."','".$datos['pais_eti']."')");
 			//le ponemos 'dni' y mas porque en el controlador definimos ese array de datos 
 			$sql->execute();
 			return $sql;

@@ -1,0 +1,10 @@
+﻿prod_codigo;prod_descripcion;prod_abreviatura;prod_denominacion;produc_imagen;line_descripcion;suli_descripcion;ssli_descripcion;prod_vigencia;pvpd_importe
+000000000000087;RIBEYE AHUMADO;RIBEYE;El ojo de costilla es un filete extraído de la sección de la costilla de ternera, entre las costillas seis y la doce.;ribeye.png;PARA VENTA;HORNO;;SI;149.22
+000000000000088;TOMAHAWK AHUMADO;TOMAHAWK;El tomahawk es una exquisitez culinaria, se trata de una chuleta de carne de ternera que mantiene el hueso de la costilla.;tomahawk.png;PARA VENTA;HORNO;;SI;169.9
+000000000000089;PICANIA AHUMADA;PICAÑA;Se trata de un trozo de carne tipo lonja ubicado entre lo que hoy llamamos vacío y las costillas;picania.png;PARA VENTA;HORNO;;NO;139.9
+000000000000090;RIBEYE AHUMADO;RIBEYE;El ojo de costilla es un filete extraído de la sección de la costilla de ternera, entre las costillas seis y la doce.;ribeye.png;PARA VENTA;HORNO;;NO;149.22
+000000000000091;TOMAHAWK AHUMADO;TOMAHAWK;El tomahawk es una exquisitez culinaria, se trata de una chuleta de carne de ternera que mantiene el hueso de la costilla.;tomahawk.png;PARA VENTA;HORNO;;NO;169.9
+000000000000093;LAGSANIA ITALIANA;LAGSANIA;El lomo es una exquisitez culinaria, se trata de una chuleta de carne de ternera que mantiene el hueso de la costilla.;queso.png;PARA VENTA;HORNO;;SI;80
+000000000000094;CARNE Y POLLO ASADO;CARNE Y POLLO;El pollo es una exquisitez culinaria, se trata de una chuleta de carne de ternera que mantiene el hueso de la costilla.;combo.png;PARA VENTA;HORNO;;SI;149.9
+000000000000095;POLLO BROASTER A LA BBQ;POLLO BROASTER;El pollo es una exquisitez culinaria, se trata de una chuleta de carne de ternera que mantiene el hueso de la costilla.;pollo.png;PARA VENTA;HORNO;;SI;45.9
+000000000000096;CHIFA;POLLO BROASTER;El pollo es una exquisitez culinaria, se trata de una chuleta de carne de ternera que mantiene el hueso de la costilla.;chifa.png;PARA VENTA;HORNO;;SI;45.9

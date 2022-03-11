@@ -179,7 +179,7 @@ if ($_SESSION["tipo_usuario_corsch"] != "Administrador") {
                                                 <li class=" ">
                                                     <a href="<?php echo SERVERURL ?>auditoria/" class="waves-effect waves-dark">
                                                         <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                        <span class="pcoded-mtext">Auditoria</span>
+                                                        <span class="pcoded-mtext">Auditoría</span>
                                                         <span class="pcoded-mcaret"></span>
                                                     </a>
                                                 </li>
@@ -224,7 +224,7 @@ if ($_SESSION["tipo_usuario_corsch"] != "Administrador") {
                                                 <li class=" ">
                                                     <a href="<?php echo SERVERURL ?>configWeb/" class="waves-effect waves-dark">
                                                         <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                        <span class="pcoded-mtext">Configuracion Web</span>
+                                                        <span class="pcoded-mtext">Configuración Web</span>
                                                         <span class="pcoded-mcaret"></span>
                                                     </a>
                                                 </li>
