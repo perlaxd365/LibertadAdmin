@@ -51,6 +51,7 @@ $(document).ready(function(){
                 // para mostrar la carga el porcentaje si fuera el caso de un archivo grande 
                 //que estamos subiendo
                 xhr: function(){
+                    document.getElementById('loading1').style.display = 'block';
                     var xhr = new window.XMLHttpRequest();
                     xhr.upload.addEventListener("progress", function(evt) {
                       if (evt.lengthComputable) {
@@ -67,12 +68,14 @@ $(document).ready(function(){
                 },
 // si el envio del formulario fue satisfactorio se muestra la respuesta 
                 success: function (data) {
+                    document.getElementById('loading1').style.display = 'none';
                     respuesta.html(data);
 
                  $("#RespuestaAjax").append(data);
                 },
                 // o si hay error manda error
                 error: function(data) {
+                    document.getElementById('loading1').style.display = 'none';
                  $("#RespuestaAjax").append(data);
                 }
             });

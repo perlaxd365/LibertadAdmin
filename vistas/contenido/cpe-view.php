@@ -44,6 +44,9 @@
                                     <button type="submit" class="btn btn-primary">Cargar</button>
                                 </form>
 
+                                <div id="loading" style="display: none;">
+                                    <img width="80" class="rounded mx-auto d-block" height="50" src="<?php echo SERVERURL ?>vistas/images/cargando.gif" alt="">
+                                </div>
 
                                 <div class="RespuestaAjax" id="RespuestaAjax">
                                 </div>
@@ -68,6 +71,9 @@
                                       <button type="submit" class="btn btn-primary">Cargar</button>
                                 </form>
 
+                                <div id="loading1" style="display: none;">
+                                    <img width="80" class="rounded mx-auto d-block" height="50" src="<?php echo SERVERURL ?>vistas/images/cargando.gif" alt="">
+                                </div>
 
                                 <div class="RespuestaAjax" id="RespuestaAjax">
                                 </div>

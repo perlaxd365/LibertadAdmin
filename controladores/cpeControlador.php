@@ -115,7 +115,11 @@ class cpeControlador extends cpeModelo
                                         data: {
                                             'up_cpe': 3
                                         },
+                                        beforeSend: function() {
+                                            document.getElementById('loading').style.display = 'block';
+                                        },
                                         success: function(respuesta) {
+                                            document.getElementById('loading').style.display = 'none';
                                             $('#RespuestaAjax').attr('disabled', false);
                                             $('#RespuestaAjax').html(respuesta);
                                         }
@@ -309,11 +313,26 @@ class cpeControlador extends cpeModelo
                         }
                         closedir($dir);
                     }
+                }else{
+                    $alerta = [
+                        "Alerta" => "simple",
+                        "Titulo" => "Algo salió mal",
+                        "Texto" => "ERROR",
+                        "Tipo" => "error"
+                    ];
                 }
             }
 
-            return mainModel::sweet_alert($alerta);
+        }else{
+            $alerta = [
+                "Alerta" => "simple",
+                "Titulo" => "Algo salió mal",
+                "Texto" => "Por favor selecciona 1 o mas archivos",
+                "Tipo" => "error"
+            ];
         }
+        
+            return mainModel::sweet_alert($alerta);
     }
 
 
@@ -896,7 +915,7 @@ class cpeControlador extends cpeModelo
             $alerta = [
                 "Alerta" => "simple",
                 "Titulo" => "Lo sentimos",
-                "Texto" => "Los datos que ingresaste no coinciden con algun comprobante",
+                "Texto" => "Los datos que ingresaste no coinciden con algún comprobante",
                 "Tipo" => "error"
             ];
             return mainModel::sweet_alert($alerta);

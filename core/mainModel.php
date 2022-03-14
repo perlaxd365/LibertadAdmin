@@ -10,9 +10,6 @@ if (isset($pdf)) {
 	}
 }
 
-
-
-
 class mainModel
 {
 	public static function conectar()

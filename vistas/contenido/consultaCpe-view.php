@@ -62,7 +62,7 @@
                 <div class="col-md-8">
                     <div class="page-header-title">
                         <h5 class="m-b-10">Consulta</h5>
-                        <p class="m-b-0">Consulta de comprobantes electronicos</p>
+                        <p class="m-b-0">Consulta de comprobantes electrónicos</p>
                     </div>
                 </div>
                 <div class="col-md-4">

@@ -102,14 +102,14 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <label for="exampleInputEmail1">RUC</label>
-                                            <input name="consulta_ruc" type="text" class="form-control" placeholder="Ruc del emisor" aria-label="Username" aria-describedby="basic-addon1">
+                                            <input name="consulta_ruc" type="text" value="10157397775" class="form-control" placeholder="Ruc del emisor" aria-label="Username" aria-describedby="basic-addon1">
                                         </div>
                                         <div class="col-6">
 
                                             <label for="exampleInputEmail1">Tipo Comprobante</label>
                                             <select name="consulta_tipo_comp" class="custom-select">
-                                                <option selected value="01">Factura electronica</option>
-                                                <option value="03">Boleta de venta electronia</option>
+                                                <option selected value="01">Factura electrónica</option>
+                                                <option value="03">Boleta de venta electrónica</option>
                                             </select>
                                         </div>
                                     </div>
@@ -121,7 +121,7 @@
                                         </div>
                                         <div class="col-6">
                                             <label for="exampleInputEmail1">Número</label>
-                                            <input name="consulta_numero_cpe" type="text" class="form-control" placeholder="Número de comprobante" aria-label="Username" aria-describedby="basic-addon1">
+                                            <input name="consulta_numero_cpe" maxlength="8" type="text" class="form-control" placeholder="Número de comprobante" aria-label="Username" aria-describedby="basic-addon1">
                                         </div>
                                     </div>
                                     <br>
